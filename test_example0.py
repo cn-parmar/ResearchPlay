@@ -4,8 +4,6 @@ from playwright.sync_api import Page, expect
 
 @pytest.fixture(scope="function", autouse=True)
 def before_each_after_each(page: Page):
-    # Chromium, Firefox, or WebKit
-    # chromium.launch(headless=False, slow_mo=100)
 
     print("before the test runs")
 
